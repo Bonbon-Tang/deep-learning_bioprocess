@@ -1,3 +1,5 @@
 The first attempt to model the bioprocess is based on the noise-free data. This was generated via given math-equations and ODE-solver in python. 
+When training data, the given math equations were assumed to be unknown; instead, data was the only resource which can be used for buidling model.
 
-When training data, the given math equations were assumed to be unknown;instead, data was the only resource which can be used for buidling model.
+Firstly, five set of data was generated via the method above. The names were output*_*_*_t, the "*" indicates the initial condition of the three measured points.
+The time-span of this data was 1000s, with 0.5s being the measurement interval. 
