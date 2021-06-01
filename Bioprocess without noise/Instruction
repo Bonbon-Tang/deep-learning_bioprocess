@@ -12,3 +12,7 @@ The purposed model are series-of-Feed-forward neural nework and GRU:
 
 The first model was three Feed-Forward neural networks with 0.5s,2s,8s intervals. All of them had only one-hidden layer with 20 hidden units. The inputs and outputs were 3.
 For testing, they were conmbined for prediction. Given that every 32s, a ground-true point were known and the next points need to be predicted via models above. 
+The first testing shows that the prediction was perfect while the second testing was not that perfect. This is understandable because the second testing were far from the
+region of the training set. This was done to show how the model decays when the testing were far from the training. 
+
+
