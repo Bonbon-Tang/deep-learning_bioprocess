@@ -3,3 +3,7 @@ When training data, the given math equations were assumed to be unknown; instead
 
 Firstly, five set of data was generated via the method above. The names were output*_*_*_t, the "*" indicates the initial condition of the three measured points.
 The time-span of this data was 1000s, with 0.5s being the measurement interval. 
+
+The data generated could not be used directly as the magnitute of measurement was largely different. 
+Thus, scaling is evitable and here, constant "mean" and "variance" was used, these two file was also saved in packages. 
+
