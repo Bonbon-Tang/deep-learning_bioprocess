@@ -5,9 +5,9 @@ This is a mini-project that uses deep-learning methods to model a bioprocess wit
 The first attempt to model the bioprocess is based on the noise-free data. This was generated via given math-equations and ODE-solver in python. 
 When training data, the given math equations were assumed to be unknown;instead, data was the only resource which can be used for buidling model.
 
-#####################################################################################################################################################
+#########################################################################
 Noise-free Model
-#####################################################################################################################################################
+#########################################################################
 The first attempt to model the bioprocess is based on the noise-free data. This was generated via given math-equations and ODE-solver in python. 
 When training data, the given math equations were assumed to be unknown; instead, data was the only resource which can be used for buidling model.
 
@@ -30,4 +30,4 @@ When predicing, the model was expected to predict next 300-time step values. It 
 sent to encoder first and the encoder_output will be then sent to decoder for step-to-step(300steps expected) prediction. 
 The testing data within the range of training set shows a very good result, but that far from the training set will deviate after hundreds of time-steps.
 
-#####################################################################################################################################################
+#########################################################################
