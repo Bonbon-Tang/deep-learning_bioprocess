@@ -15,4 +15,8 @@ For testing, they were conmbined for prediction. Given that every 32s, a ground-
 The first testing shows that the prediction was perfect while the second testing was not that perfect. This is understandable because the second testing were far from the
 region of the training set. This was done to show how the model decays when the testing were far from the training. 
 
+The second model was a basic GRU model. Here, teacher training was used to train and this will reduce the training time exponentially. 
+When predicing, the model was expected to predict next 300-time step values. It should be mentioned that the input could be 1-step or several time-steps, this will be 
+sent to encoder first and the encoder_output will be then sent to decoder for step-to-step(300steps expected) prediction. 
+The testing data within the range of training set shows a very good result, but that far from the training set will deviate after hundreds of time-steps.
 
