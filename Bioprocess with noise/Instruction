@@ -18,4 +18,8 @@ Finally, a tranformer-model was used. It was exactly the model proposed in the o
 known points and sends the encoder-result to decoder for prediction. The positional ecoding was used to enhance the time-information and masks were also used for prediction.
 It should also be menstioned that teacher-training method was also adopted here to accelerate the training- process. Actually, the training of Transformer was much faster than
 GRU-training due to paralism. 
-The result of prediction is even better than those of GRU-model(shown in the diagram), although the curves are non-smooth. 
+The result of prediction is even slightly better than those of GRU-model(shown in the diagram), although the curves are non-smooth. 
+
+In conclusion, although series of FNN perfomed extremely well for noise-free modelling, it was not that ideal for noisy modelling. By conparison, GRU and transformer are more
+likely to catch the long-time depedency of data. GRU can predict the curve more smoothly while transformer seems to be more robust for noise. 
+
