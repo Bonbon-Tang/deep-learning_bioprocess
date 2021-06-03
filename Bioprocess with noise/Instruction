@@ -1,0 +1,5 @@
+Similar to modelling the bioprocess without noise, data was generated via equations and ODE solvers. Gaussian white noise was added to the ground truth value.
+This time, more sets of data were generated as noisy data was much more difficult to model. A total of 6 sets of data was generated and half of them were used for training. 
+
+Here, three models was proposed. Series of FNN and GRU were similar to those in noise-free modelling while the last was a transformer model. 
+
