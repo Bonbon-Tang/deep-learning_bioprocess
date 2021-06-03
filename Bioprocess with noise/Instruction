@@ -5,4 +5,8 @@ Here, three models was proposed. Series of FNN and GRU were similar to those in 
 Before training models, the data needed to be preprocessed as previous. They were standarized first.
 The obtained mean and variance was used both for training and testing. (Saved in file)
 
+The first model proposed was series of FNN. A total of 3 FNN was trained(1,4,16steps) and was used to predict next 300 steps given the first step. 
+As can be seen in the testing diagram, although the model will deviate somewhat after hundreds of timesteps, it can still capture the main trend of the bioprocess.
+Compared to the model for noise-free data, it was somewhat noisy and inaccurate; however, note that there are still only 3 FNN, if more are trained, this might be alleviated.
+
 
