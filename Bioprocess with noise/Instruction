@@ -6,7 +6,11 @@ Before training models, the data needed to be preprocessed as previous. They wer
 The obtained mean and variance was used both for training and testing. (Saved in file)
 
 The first model proposed was series of FNN. A total of 3 FNN was trained(1,4,16steps) and was used to predict next 300 steps given the first step. 
+All of the separated FNN has only one hidden layer with 20 hidden units.
 As can be seen in the testing diagram, although the model will deviate somewhat after hundreds of timesteps, it can still capture the main trend of the bioprocess.
 Compared to the model for noise-free data, it was somewhat noisy and inaccurate; however, note that there are still only 3 FNN, if more are trained, this might be alleviated.
 
+The second model was GRU. The number hidden units was also 20. Like the one in noise-free model, a encoder-decoder model was proposed. An arbitrary number of known points 
+can be sent into the encoder, the decoder will output the next several steps( can be determined ).
+As in the testing diagram, the problem is similar to that in SFNN but less. Long-time prediction was not that perfect but the trend was much more smooth than that of SFNN.
 
