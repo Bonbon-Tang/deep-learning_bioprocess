@@ -14,3 +14,8 @@ The second model was GRU. The number hidden units was also 20. Like the one in n
 can be sent into the encoder, the decoder will output the next several steps( can be determined ).
 As in the testing diagram, the problem is similar to that in SFNN but less. Long-time prediction was not that perfect but the trend was much more smooth than that of SFNN.
 
+Finally, a tranformer-model was used. It was exactly the model proposed in the original paper "attention is all you need" with encoder and decoder. The encoder here takes the
+known points and sends the encoder-result to decoder for prediction. The positional ecoding was used to enhance the time-information and masks were also used for prediction.
+It should also be menstioned that teacher-training method was also adopted here to accelerate the training- process. Actually, the training of Transformer was much faster than
+GRU-training due to paralism. 
+The result of prediction is even better than those of GRU-model(shown in the diagram), although the curves are non-smooth. 
